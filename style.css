@@ -176,7 +176,13 @@ span {
 a{
     text-decoration: none;
 }
-
+.name{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 
@@ -202,7 +208,7 @@ a{
         align-items: center;
         background-color: rgb(241, 241, 241);
         width: 100%;
-        /* height: 100%; */
+        height: 100%;
         position: absolute;
         top: -100%;
         right: 00%;
@@ -275,5 +281,9 @@ a{
     }
     .fa-linkedin{
         bottom: 15%;
+    }
+    .name{
+        left: 25%;
+        bottom: 4%;
     }
 }
