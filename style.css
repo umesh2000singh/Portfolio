@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #11151a;
+    background-color: #1d1d1d;
     -webkit-user-select: none;
     /* Safari */
     -ms-user-select: none;
@@ -24,6 +24,7 @@ body {
 span {
     color: #ffffff;
     font-weight: 200;
+    text-decoration: underline;
 }
 
 .logo {
