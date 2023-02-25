@@ -75,7 +75,7 @@ span {
 }
 
 /* mainbody */
-.mainbody img {
+.photo1 {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -83,6 +83,7 @@ span {
     height: 100vh;
     background-position: center;
     object-fit: contain ;
+    transition: all .3s;
 }
 
 .building1 {
@@ -90,11 +91,19 @@ span {
     font-weight: 800;
     text-decoration: underline;
 }
-
+.building2{
+    font-size: 45px;
+    font-weight: 800;
+    text-decoration: underline;
+}
 .building1para {
     font-size: 15px;
 }
 
+.photo1_clicked{
+    opacity: 0;
+    top: -10%;
+}
 .content1 {
     text-align: center;
     position: absolute;
@@ -105,6 +114,24 @@ span {
     padding-top: 2%;
     z-index: -1;
     transition: all .3s;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 10px;
+    padding: 10px;
+}
+.photo2{
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    top:-10%;
+    right: 0;
+    height: 100vh;
+    background-position: center;
+    object-fit: contain ;
+    transition: all .3s;
+}
+.photo2_clicked{
+    opacity: 1;
+    top: 0;
 }
 .content1_clicked{
     top: 60%;
@@ -121,6 +148,9 @@ span {
     padding-top: 2%;
     z-index: -1;
     transition: all .3s;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 10px;
+    padding: 10px;
 }
 .content2_clicked{
     opacity: 1;
@@ -130,6 +160,7 @@ span {
     position: absolute;
     top: 50%;
     transition: all .3s;
+    z-index: 1000;
 }
 
 .social {
@@ -183,7 +214,18 @@ a{
     left: 5%;
     font-size: 20px;
     font-weight: 500;
+    animation: name 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
 }
+@keyframes name {
+    0% {
+        opacity: 0;
+      transform: translate(100%,0);
+    }
+    100% {
+        opacity: 1;
+      transform: translate(0,0);
+    }
+  }
 
 
 
@@ -209,7 +251,7 @@ a{
         align-items: center;
         background-color: rgb(241, 241, 241);
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         position: absolute;
         top: -100%;
         right: 00%;
@@ -267,7 +309,10 @@ a{
         background-color: #101214a8;
         border-radius: 10px;
     }
-
+    .content2{
+        background-color: #101214a8;
+        border-radius: 10px;
+    }
     .social {
         position: absolute;
         bottom: 2%;
@@ -286,5 +331,16 @@ a{
     .name{
         left: 25%;
         bottom: 4%;
+    }.photo1{
+        display: block;
+    }
+    .photo1_clicked{
+        display: none;
+    }
+    .photo2{
+        display: none;
+    }
+    .photo2_clicked{
+        display: block;
     }
 }
