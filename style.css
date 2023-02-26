@@ -24,7 +24,6 @@ body {
 span {
     color: #ffffff;
     font-weight: 200;
-    text-decoration: underline;
 }
 
 .logo {
@@ -245,7 +244,7 @@ a{
 
 
 /* media querry */
-@media screen and (max-width:840px) {
+@media screen and (max-width:1200px) {
     .menu_items {
         flex-direction: column;
         align-items: center;
