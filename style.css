@@ -160,34 +160,11 @@ span {
     z-index: 1000;
 }
 
-.social {
-    transition: all .3s;
-    position: relative;
-    margin-top: 150px;
-    margin-bottom: 70px;
-    
-}
-.social:hover{
-    scale: 150%;
-    margin-left: 10px;
-}
-.fa-instagram{
-    left: 5%;
-}
-.fa-instagram:hover{
-    color: red;
-}
-.fa-twitter{
-    left: 10%;
-}
-.fa-twitter:hover{
-    color: #00acee;
-}
-.fa-linkedin{
-    left: 15%;
-}
-.fa-linkedin:hover{
-    color: #0077b5;
+
+.socials{
+    position: absolute;
+    top: 500px;
+    left: 100px;
 }
 .arrow:hover {
     scale: 150%;
