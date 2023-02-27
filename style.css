@@ -1,288 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --Lavender: #E2D1F9;
+    --Teal : #317773;
+    --white: #fff;
+    --black: #000000;
+  }
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
-    font-weight: 500;
-    overflow: none;
 }
-
-body {
-    background-color: #1d1d1d;
-    -webkit-user-select: none;
-    /* Safari */
-    -ms-user-select: none;
-    /* IE 10 and IE 11 */
-    user-select: none;
-    /* Standard syntax */
+body{
+    background-color: var(--Teal);
 }
-
 /* navbar */
-span {
-    color: #ffffff;
-    font-weight: 200;
-}
-
-.logo {
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.menu {
-    cursor: pointer;
-    position: absolute;
-    right: 5%;
-    display: none;
-}
-
-.navbar {
+nav{
+    background-color: var(--Lavender);
     z-index: 1000;
-    align-items: center;
-    margin: 40px 180px 40px 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul li {
-    list-style: none;
-    margin: 27px 65px;
-    cursor: pointer;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    transition: all .3s;
-}
-
-.navbar ul li a:hover {
-    color: rgb(71, 71, 71);
-}
-
-.cross {
-    cursor: pointer;
-    position: absolute;
-    right: 5%;
-    display: none;
-}
-
-/* mainbody */
-
-.building1 {
-    font-size: 45px;
-    font-weight: 800;
-    text-decoration: underline;
-}
-.building2{
-    font-size: 45px;
-    font-weight: 800;
-    text-decoration: underline;
-}
-.building1para {
-    font-size: 15px;
-}
-
-.photo1_clicked{
-    opacity: 0;
-    top: -10%;
-}
-.content1 {
-    text-align: center;
-    position: relative;
-    margin-top: 130px;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    z-index: -1;
-    transition: all .3s;
-    background-color: rgba(0, 0, 0, 0.185);
-    border-radius: 10px;
-    padding: 10px;
-}
-.photo2{
-    text-align: center;
-    z-index: -1;
-    position: absolute;
-    opacity: 0;
-    top:-10%;
-    right: 0;
-    height: 100%;
-    background-position: center;
-    object-fit: contain ;
-    transition: all .3s;
-}
-.photo2_clicked{
-    opacity: 1;
+    position: sticky;
     top: 0;
+    height: 120px;
 }
-.content1_clicked{
-    transform: translate(0,-100px);
-    opacity: 0;
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 40px 0;
 }
-.content2{
-    text-align: center;
-    position: relative;
-    margin-top: -130px;
-    opacity: 0;
-    padding-bottom: 2%;
-    padding-top: 2%;
-    z-index: -1;
-    transition: all .3s;
-    background-color: rgba(0, 0, 0, 0.185);
-    border-radius: 10px;
-    padding: 10px;
-    transform: translate(0,100px);
+.logo{
+    font-weight: 200;
+    font-size: 25px;
 }
-.content2_clicked{
-    opacity: 1;
-    transform: translate(0);
+.menu{
+    display: flex;
+    gap: 100px;
 }
-.arrow {
-    position: absolute;
-    top: 310px;
-    transition: all .3s;
-    z-index: 1000;
-}
-
-
-.socials{
-    position: absolute;
-    top: 500px;
-    left: 100px;
-}
-.arrow:hover {
-    scale: 150%;
-}
-
-.fa {
-    cursor: pointer;
-}
-
-.fa-angle-left {
-    left: 5%;
-}
-
-.fa-angle-right {
-    right: 5%;
-}
-a{
+.menu a{
     text-decoration: none;
+    color: var(--black);
+    font-weight: 400;
+}
+.hamburger{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lines{
+    transition: all .3s;
+    height: 2px;
+    width: 30px;
+    background-color: var(--black);
+    margin: 5px;
+}
+.hamburger_clicked :nth-child(2){
+    display: none;
+}
+.hamburger_clicked :nth-child(1){
+    transform: translateY(6px) rotate(45deg);
+}
+.hamburger_clicked :nth-child(3){
+    transform: translateY(-6px) rotate(135deg);
+}
+/* mainbody */
+.mainbody{
+    
 }
 
 
-  /* my work */
-  .myworks{
-    text-align: center;
-  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* media querry */
-@media screen and (max-width:1200px) {
-    .menu_items {
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(241, 241, 241);
-        width: 100%;
-        /* height: 100%; */
+@media(max-width:876px){
+    .menu{
         position: absolute;
-        top: -100%;
-        right: 00%;
+        top: -200px;
+        background-color: var(--Lavender);
+        width: 425px;
         text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
         opacity: 0;
-        transition: all .3s;
-
-    }
-
-    .reveal {
-        top: 0;
-        opacity: 1;
-    }
-
-    .navbar ul li a {
-        color: black;
-    }
-
-    .logo {
-        width: 60px;
-        margin: 15px auto;
-    }
-
-    .menu {
-        z-index: 2;
-        position: absolute;
-        top: 20px;
-        display: block;
-        color: #fff;
-        transition: all .3s;
-    }
-    .menu_after {
-        opacity: 0;
-    }
-    .building1{
-        font-size: 30px;
-    }
-    .building1para{
-        font-size: 15px;
-    }
-    .building2{
-        font-size: 30px;
-    }
-    .buidling2para{
-        font-size: 15px;
-    }
-    .cross {
-        opacity: 0;
-        top: 20px;
-        display: block;
-        color: black;
         pointer-events: none;
-        transition: all .3s;
-    }
+        padding: 20px 0px;
+        transition: all .5s;
 
-    .cross_after {
+    }
+    .menu_show{
         opacity: 1;
+        pointer-events: all;
+        top: 0;
     }
-
-    .mainbody img {
-        opacity: .5;
+    .hamburger{
+        opacity: 1;
+        pointer-events: all;
     }
-
-    .content1 {
-        background-color: #101214a8;
-        border-radius: 10px;
-    }
-    .content2{
-        background-color: #101214a8;
-        border-radius: 10px;
-    }
-    .photo1{
-        display: block;
-    }
-    .photo1_clicked{
-        display: none;
-    }
-    .photo2{
-        display: none;
-    }
-    .photo2_clicked{
-        display: block;
+}
+@media(max-width:425px){
+    .menu{
+        width: 100%;
     }
 }
