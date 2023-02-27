@@ -74,16 +74,6 @@ span {
 }
 
 /* mainbody */
-.photo1 {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-position: center;
-    object-fit: contain ;
-    transition: all .3s;
-}
 
 .building1 {
     font-size: 45px;
