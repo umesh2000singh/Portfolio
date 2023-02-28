@@ -5,16 +5,20 @@
     --Teal : #317773;
     --white: #fff;
     --black: #000000;
-  }
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 body{
-    background-color: var(--Teal);
-    height: 1000px;
+    background-color: var(--white);
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  height: 1000px;
 }
 /* navbar */
 nav{
@@ -23,6 +27,7 @@ nav{
     position: sticky;
     top: 0;
     height: 120px;
+    overflow: visible;
 }
 .container{
     display: flex;
@@ -43,12 +48,16 @@ nav{
     text-decoration: none;
     color: var(--black);
     font-weight: 400;
+    transition: all .3s;
+}
+.menu a:hover{
+    color: var(--Teal);
 }
 .hamburger{
     position: absolute;
     right: 40px;
     top: 40px;
-    z-index: 1;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -76,14 +85,60 @@ nav{
     transform: translateY(-6px) rotate(135deg);
 }
 /* mainbody */
-
-
-
-
+.mainbody{
+    background-color: var(--Teal);
+    height: 400px;
+    color: var(--white);
+}
+.mainbody img{
+    position: relative;
+    top: 6px;
+    width:284px;
+}
+.left{
+    /* margin: 120px 300px;
+    float:left; */
+    position: absolute;
+    top: 320px;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.right{
+    float: right;
+    background-color: var(--Lavender);
+    
+}
+.intro{
+    font-size: 70px;
+    font-weight: 100;
+    
+}
+.ocupation{
+    background-color: #769290;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+.btn{
+    display: block;
+    background-color: var(--Lavender);
+    padding: 5px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.btn:hover{
+    background-color: #F5E9CF;
+    scale: 90%;
+}
 @media(max-width:876px){
     .menu{
         position: absolute;
-        top: -300px;
+        top: -450px;
         background-color: var(--Lavender);
         width: 425px;
         text-align: center;
@@ -104,10 +159,46 @@ nav{
         opacity: 1;
         pointer-events: all;
     }
+    .menu a{
+        padding: 20px 0;
+    }
+    .menu a:hover{
+        color: var(--black);
+    }
+    .left{
+        left: 180px;
+    }
+    
 }
 
 @media(max-width:425px){
     .menu{
         width: 100%;
+        background-color: var(--Teal);
+    }
+    .menu a{
+        color: var(--white);
+    }
+    .mainbody img{
+        right: -100px;
+        width:100%;
+    }
+    nav{
+        color: var(--white);
+        background-color: var(--Teal);
+    }
+    .lines{
+        background-color: var(--white);
+    }
+    .left{
+        left: 140px;
+    }
+    .btn{
+        background-color: var(--Teal);
+        color: var(--white);
+    }
+    .btn:hover{
+        background-color: var(--Teal);
+        scale: 100%;
     }
 }
