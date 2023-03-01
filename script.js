@@ -19,7 +19,7 @@ ScrollReveal().reveal('.left', { origin: 'bottom' });
 const typed = new Typed('.multi-text', {
     strings: ['Architect.', 'Urban Planer.', 'Bim Architect.'],
     typeSpeed:100,
-    backSpeed:100,
+    backSpeed:90,
     backDelay:1000,
     loop: true
 })
