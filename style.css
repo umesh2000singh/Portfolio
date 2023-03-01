@@ -12,6 +12,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.fa-arrow-up{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--Teal);
 }
 body{
     -webkit-user-select: none; /* Safari */
@@ -21,9 +29,7 @@ body{
 /* navbar */
 nav{
     background-color: var(--Lavender);
-    z-index: 1000;
-    position: sticky;
-    top: 0;
+    z-index: 1000;  
     height: 120px;
     overflow: visible;
 }
@@ -133,8 +139,17 @@ nav{
     background-color: #F5E9CF;
     scale: 90%;
 }
+.about{
+    height: 100vh;
+}
+
+
+
+
+/* media querry */
 @media(max-width:876px){
     .menu{
+        z-index: 999;
         position: absolute;
         top: -450px;
         background-color: var(--Lavender);
@@ -147,7 +162,6 @@ nav{
         pointer-events: none;
         padding: 20px 0px;
         transition: all .5s;
-
     }
     .menu_show{
         pointer-events: all;
@@ -164,14 +178,11 @@ nav{
         color: var(--black);
     }
     .left{
+        
         left: 180px;
         z-index: 2;
     }
     
-}
-
-.hello{
-    margin-top: 1000px;
 }
 @media(max-width:425px){
     .menu{
@@ -195,6 +206,7 @@ nav{
     .left{
         top: 300px;
         left: 150px;
+        overflow-x: hidden;
     }
     .btn{
         background-color: var(--Teal);
