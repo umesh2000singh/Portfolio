@@ -85,15 +85,17 @@ nav{
     display: none;
 }
 .hamburger_clicked :nth-child(1){
+    background-color: var(--white);
     transform: translateY(6px) rotate(45deg);
 }
 .hamburger_clicked :nth-child(3){
     transform: translateY(-6px) rotate(-45deg);
+    background-color: var(--white);
 }
 /* mainbody */
 .mainbody{
     background-color: var(--Teal);
-    height: 400px;
+    height: 100%;
     color: var(--white);
 }
 .mainbody img{
@@ -141,6 +143,8 @@ nav{
     background-color: #F5E9CF;
     scale: 90%;
 }
+
+
 /* about section */
 .about{
     height: 100vh;
@@ -263,6 +267,9 @@ nav{
     }
     .menu a{
         color: var(--white);
+    }
+    .mainbody{
+        overflow: hidden;
     }
     .mainbody img{
         right: -100px;

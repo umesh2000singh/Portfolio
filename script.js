@@ -14,6 +14,9 @@ ScrollReveal({
 
 ScrollReveal().reveal('.right', { origin: 'left' });
 ScrollReveal().reveal('.left', { origin: 'bottom' });
+ScrollReveal().reveal('.row', { origin: 'left' });
+ScrollReveal().reveal('.about-heading', { origin: 'top' });
+
 
 // typejs
 const typed = new Typed('.multi-text', {
