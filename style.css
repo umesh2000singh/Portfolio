@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* variable */
 :root {
     --Lavender: #E2D1F9;
@@ -20,6 +21,7 @@
     right: 10px;
     cursor: pointer;
     color: var(--Teal);
+    z-index: 999;
 }
 body{
     -webkit-user-select: none; /* Safari */
@@ -33,7 +35,7 @@ nav{
     height: 120px;
     overflow: visible;
 }
-.container{
+.navbar{
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -61,7 +63,7 @@ nav{
     position: absolute;
     right: 40px;
     top: 40px;
-    z-index: 1000;
+    z-index: 1001;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -139,9 +141,62 @@ nav{
     background-color: #F5E9CF;
     scale: 90%;
 }
+/* about section */
 .about{
     height: 100vh;
+    background-color: var(--Lavender);
+    margin-right: 40px;
 }
+.about-heading{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.about-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 2rem;
+    
+}
+.about-me::-webkit-scrollbar{
+    width: 0px;
+}
+.row{
+    height: 400px;
+    width: 400px;
+    /* background-color: var(--Teal); */
+    border-bottom: 1px solid var(--Teal);
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+.about-me-heading{
+    position: sticky;
+    top: 0;
+    background-color: var(--Teal);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    color: var(--white);
+    font-weight: 600;
+}
+.about-me-para{
+    padding: 20px;
+    font-size: 15px;
+    color: #9a8ea8;
+}
+
+
+
+
+
+
+
 
 
 
@@ -183,7 +238,24 @@ nav{
         z-index: 2;
     }
     
+    .about-row{
+        flex-direction: column;
+    }
+    .about-heading{
+        font-size: 50px;
+    }
+    .row{
+        width: 300px;
+    }
+    .about{
+        margin: 0;
+    }
+    
 }
+
+
+
+/* mobile version */
 @media(max-width:425px){
     .menu{
         width: 100%;
@@ -215,5 +287,9 @@ nav{
     .btn:hover{
         background-color: var(--Teal);
         scale: 100%;
+    }
+    .row{
+        height: 250px;
+        width: 250px;
     }
 }
