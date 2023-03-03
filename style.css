@@ -102,7 +102,7 @@ nav{
 /* mainbody */
 .mainbody{
     background-color: var(--Teal);
-    height: 510px;
+    height: 100%;
     margin-top: 120px;
     color: var(--white);
 }
