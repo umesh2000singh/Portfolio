@@ -4,6 +4,8 @@ hamburger_button.addEventListener("click", ()=>{
     menu.classList.toggle("menu_show");
     hamburger_button.classList.toggle("hamburger_clicked")
 });
+
+
 // scroll animation
 ScrollReveal({
     reset: true,
@@ -12,9 +14,10 @@ ScrollReveal({
     delay: 100
 });
 
-ScrollReveal().reveal('.right', { origin: 'left' });
+ScrollReveal().reveal('.right', { origin: 'right' });
 ScrollReveal().reveal('.left', { origin: 'bottom' });
-ScrollReveal().reveal('.row', { origin: 'left' });
+ScrollReveal().reveal('.about-photo', { origin: 'right' });
+ScrollReveal().reveal('.about-me', { origin: 'left' });
 ScrollReveal().reveal('.about-heading', { origin: 'top' });
 
 
