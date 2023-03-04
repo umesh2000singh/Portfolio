@@ -6,21 +6,6 @@ hamburger_button.addEventListener("click", ()=>{
 });
 
 
-// scroll animation
-ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 100
-});
-
-ScrollReveal().reveal('.right', { origin: 'right' });
-ScrollReveal().reveal('.left', { origin: 'bottom' });
-ScrollReveal().reveal('.about-photo', { origin: 'right' });
-ScrollReveal().reveal('.about-me', { origin: 'left' });
-ScrollReveal().reveal('.about-heading', { origin: 'top' });
-
-
 // typejs
 const typed = new Typed('.multi-text', {
     strings: ['Architect.', 'Urban Planer.', 'Bim.'],
