@@ -303,7 +303,7 @@ nav {
 
 
 /* mobile version */
-@media(max-width:425px) {
+@media(max-width:425px){
     .menu {
         width: 100%;
         background-color: var(--Teal);
@@ -317,11 +317,7 @@ nav {
         overflow: hidden;
     }
 
-    .mainbody img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-    }
+    
     .left {
         overflow: hidden;
         position: absolute;
@@ -332,6 +328,7 @@ nav {
 
     .right {
         width: 100%;
+        height: 100vh;
     }
 
     .btn {
