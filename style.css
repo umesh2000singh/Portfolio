@@ -303,7 +303,7 @@ nav {
 
 
 /* mobile version */
-@media(max-width:425px){
+@media (max-width:480px){
     .menu {
         width: 100%;
         background-color: var(--Teal);
@@ -328,7 +328,7 @@ nav {
 
     .right {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
     }
 
     .btn {
