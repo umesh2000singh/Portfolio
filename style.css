@@ -304,9 +304,6 @@ nav {
 
 /* mobile version */
 @media(max-width:425px) {
-    *{
-        overflow: hidden;
-    }
     .menu {
         width: 100%;
         background-color: var(--Teal);
@@ -328,9 +325,9 @@ nav {
     .left {
         overflow: hidden;
         position: absolute;
-        left: 60%;
-        top: 60%;
-        width: 100%;
+        left: 40%;
+        top: 55%;
+        
     }
 
     .right {
