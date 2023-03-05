@@ -243,6 +243,10 @@ nav {
 /* skill section */
 .skill-section {
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .skill-section p {
@@ -408,6 +412,9 @@ nav {
 
 
 /* mobile version */
+*{
+    overflow-x: hidden;
+}
 @media (max-width:480px) {
     .menu {
         width: 100%;
