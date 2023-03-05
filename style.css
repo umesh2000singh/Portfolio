@@ -278,9 +278,9 @@ nav {
 }
 .skill_1{
     animation-name: skill1;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
 }
 @keyframes skill1 {
@@ -293,8 +293,9 @@ nav {
 }
 .skill_2{
     animation-name: skill2;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -308,8 +309,9 @@ nav {
 }
 .skill_3{
     animation-name: skill3;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -323,14 +325,16 @@ nav {
 }
 .skill_4{
     animation-name: skill4;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 @keyframes skill4 {
     0%{
         width: 0%;
+        background-color: var(--Teal);
     }
     100%{
         width: 90%;
