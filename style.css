@@ -34,6 +34,7 @@ body {
     /* IE 10 and IE 11 */
     user-select: none;
     /* Standard syntax */
+    background-color: var(--Lavender);
 }
 
 ::-webkit-scrollbar {
@@ -127,6 +128,7 @@ nav {
 }
 
 .left {
+    z-index: 2;
     position: absolute;
     top: 60%;
     left: 40%;
@@ -148,7 +150,7 @@ nav {
 }
 
 .intro {
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 100;
 
 }
@@ -164,7 +166,7 @@ nav {
 
 .btn {
     display: block;
-    background-color: var(--Lavender);
+    background-color: var(--Teal);
     padding: 5px 20px;
     border: none;
     cursor: pointer;
@@ -174,7 +176,7 @@ nav {
 }
 
 .btn:hover {
-    background-color: #F5E9CF;
+    background-color: var(--Lavender);
     scale: 90%;
 }
 
@@ -190,7 +192,7 @@ nav {
 
 .about-heading {
     text-align: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 80px;
     font-weight: 100;
     font-family: 'Raleway', sans-serif;
@@ -208,22 +210,28 @@ nav {
 }
 
 .row {
-    height: 400px;
     width: 400px;
     /* background-color: var(--Teal); */
     margin: 0px 20px;
+    z-index: 2;
 }
 
 .about-me-para {
+    border: 1px solid rgb(122, 122, 122);
     padding: 20px;
     font-size: 15px;
     color: #9a8ea8;
-    border: 1px solid rgb(122, 122, 122);
     border-radius: 10px;
 }
 
-.about-section {
-    margin-top: 100px;
+.square {
+    z-index: 1;
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    border: 1px solid var(--Teal);
+    border-radius: 10px;
+    background-color: var(--Teal);
 }
 
 .about-photo img {
@@ -232,6 +240,98 @@ nav {
 }
 
 
+/* skill section */
+.skill-section {
+    height: 80vh;
+}
+
+.skill-section p {
+    text-align: center;
+}
+
+.skill-heading {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    background-color: rgb(192, 192, 192);
+    width: 80%;
+    border-radius: 15px;
+    margin: 20px auto;
+    height: 20px;
+}
+
+.skill {
+    padding: 0px 10px;
+    font-size: 15px;
+    height: 20px;
+    background-color: var(--Teal);
+    border-radius: 10px;
+    text-align: right;
+}
+.skill_1{
+    animation-name: skill1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes skill1 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+.skill_2{
+    animation-name: skill2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes skill2 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.skill_3{
+    animation-name: skill3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes skill3 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+.skill_4{
+    animation-name: skill4;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes skill4 {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
 
 
 
@@ -298,12 +398,17 @@ nav {
         border-radius: 0;
     }
 
+    .intro {
+        font-size: 70px;
+
+    }
+
 }
 
 
 
 /* mobile version */
-@media (max-width:480px){
+@media (max-width:480px) {
     .menu {
         width: 100%;
         background-color: var(--Teal);
@@ -317,13 +422,13 @@ nav {
         overflow: hidden;
     }
 
-    
+
     .left {
         overflow: hidden;
         position: absolute;
         left: 40%;
         top: 55%;
-        
+
     }
 
     .right {

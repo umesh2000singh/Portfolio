@@ -14,3 +14,4 @@ const typed = new Typed('.multi-text', {
     backDelay:1000,
     loop: true
 })
+
