@@ -18,15 +18,6 @@
     scroll-behavior: smooth;
 }
 
-.fa-arrow-up {
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    cursor: pointer;
-    color: var(--Teal);
-    z-index: 999;
-}
-
 body {
     -webkit-user-select: none;
     /* Safari */
@@ -47,10 +38,10 @@ nav {
     z-index: 1000;
     height: 120px;
     overflow: visible;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     right: 0;
-    left: 0;
+    left: 0; */
 }
 
 .navbar {
@@ -59,6 +50,7 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 40px 0;
+    
 }
 
 .logo {
@@ -140,7 +132,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     width: 400px;
     position: absolute;
     right: 0;
@@ -340,6 +332,138 @@ nav {
         width: 90%;
     }
 }
+/* 
+project section */
+.projects{
+    height: 100vh;
+    position: relative;
+    background-color: #152224;
+    overflow: hidden;
+}
+.projects h1{
+    position: relative;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    color: #e0e7e9;
+    background-color: #021418;
+    z-index: 10;
+}
+.number{
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    color: #e0e7e9;
+    z-index: 12;
+}
+.fa{
+    cursor: pointer;
+    color: #e0e7e9;
+    transition: all .3s;
+    z-index: 100;
+}
+.fa:hover{
+    scale: 150%;
+}
+.fa-angle-double-right{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+.fa-angle-double-left{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+
+.building1{
+    background-color: #e0e7e9;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s;
+    z-index: 12;
+}
+.building2{
+    background-color: #e0e7e9;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    transition: all .3s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 8;
+}
+.building2-clicked{
+    opacity: 1;
+    left: 50%;
+    pointer-events: all;
+    z-index: 11;
+}
+.building1-clicked{
+    left: 70%;
+    opacity: 0;
+    pointer-events: none;
+}
+.building1-heading{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.project1{
+    bottom: 0%;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    transition: all .3s;
+    z-index: 11;
+}
+.project1-clicked{
+    filter: blur(1px);
+    right: -10%;
+    z-index: 9;
+}
+.project2{
+    position: absolute;
+    height: 100vh;
+    right: 80%;
+    bottom: 0;
+    filter: blur(1px);
+    transition: all .3s;
+    z-index: 9;
+}
+.project2-clicked{
+    filter: blur(0px);
+    opacity: 1;
+    right: -10%;
+    bottom: 0;
+    z-index: 11;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -410,6 +534,10 @@ nav {
         font-size: 70px;
 
     }
+    .projects h1{
+        font-size: 60px;
+        z-index: 100;
+    }
 
 }
 
@@ -466,8 +594,19 @@ nav {
         height: 300px;
         margin-left: 10px;
     }
-
     .about-heading {
         font-size: 50px;
+    }
+    .building1{
+        background-color: #e0e7e9be;
+    }
+    .building2{
+        background-color: #e0e7e9be;
+    }
+    .building1-heading{
+        font-size: 30px;
+    }
+    .building1-para{
+        font-size: 10px;
     }
 }
