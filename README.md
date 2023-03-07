@@ -1,2 +1,2 @@
 # Portfolio
-current under development portfolio website
+currently under development portfolio website
