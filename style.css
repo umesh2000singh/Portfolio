@@ -347,7 +347,6 @@ project section */
     font-family: 'Raleway', sans-serif;
     font-size: 80px;
     color: #e0e7e9;
-    background-color: #021418;
     z-index: 10;
 }
 .number{
@@ -425,30 +424,28 @@ project section */
     right: 0;
     height: 100vh;
     transition: all .3s;
-    z-index: 11;
 }
 .project1-clicked{
-    filter: blur(1px);
-    right: -10%;
-    z-index: 9;
+    opacity: 0;
+    right: -20%;
+
 }
 .project2{
     position: absolute;
     height: 100vh;
-    right: 80%;
+    opacity: 0;
+    right: 20%;
     bottom: 0;
-    filter: blur(1px);
     transition: all .3s;
-    z-index: 9;
 }
 .project2-clicked{
-    filter: blur(0px);
+    right: 0;
     opacity: 1;
-    right: -10%;
-    bottom: 0;
-    z-index: 11;
 }
-
+/* contact section */
+.contact{
+    height: 100vh;
+}
 
 
 
