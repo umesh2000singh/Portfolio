@@ -26,6 +26,7 @@ body {
     user-select: none;
     /* Standard syntax */
     background-color: var(--Lavender);
+
 }
 
 ::-webkit-scrollbar {
@@ -50,7 +51,7 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 40px 0;
-    
+
 }
 
 .logo {
@@ -117,6 +118,7 @@ nav {
     height: 100vh;
     /* margin-top: 120px; */
     color: var(--white);
+
 }
 
 .left {
@@ -216,16 +218,6 @@ nav {
     border-radius: 10px;
 }
 
-.square {
-    z-index: 1;
-    position: absolute;
-    width: 240px;
-    height: 300px;
-    border: 1px solid var(--Teal);
-    border-radius: 10px;
-    background-color: var(--Teal);
-}
-
 .about-photo img {
     height: 300px;
     border-radius: 10px;
@@ -268,22 +260,26 @@ nav {
     border-radius: 10px;
     text-align: right;
 }
-.skill_1{
+
+.skill_1 {
     animation-name: skill1;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes skill1 {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 40%;
     }
 }
-.skill_2{
+
+.skill_2 {
     animation-name: skill2;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -291,15 +287,18 @@ nav {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
 @keyframes skill2 {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 50%;
     }
 }
-.skill_3{
+
+.skill_3 {
     animation-name: skill3;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -307,15 +306,18 @@ nav {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
 @keyframes skill3 {
-    0%{
+    0% {
         width: 0%;
     }
-    100%{
+
+    100% {
         width: 30%;
     }
 }
-.skill_4{
+
+.skill_4 {
     animation-name: skill4;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -323,24 +325,28 @@ nav {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
 @keyframes skill4 {
-    0%{
+    0% {
         width: 0%;
         background-color: var(--Teal);
     }
-    100%{
+
+    100% {
         width: 90%;
     }
 }
+
 /* 
 project section */
-.projects{
+.projects {
     height: 100vh;
     position: relative;
     background-color: #152224;
     overflow: hidden;
 }
-.projects h1{
+
+.projects h1 {
     position: relative;
     text-align: center;
     font-weight: 100;
@@ -349,7 +355,8 @@ project section */
     color: #e0e7e9;
     z-index: 10;
 }
-.number{
+
+.number {
     font-size: 20px;
     position: absolute;
     bottom: 5%;
@@ -357,27 +364,31 @@ project section */
     color: #e0e7e9;
     z-index: 12;
 }
-.fa{
+
+.fa {
     cursor: pointer;
     color: #e0e7e9;
     transition: all .3s;
     z-index: 100;
 }
-.fa:hover{
+
+.fa:hover {
     scale: 150%;
 }
-.fa-angle-double-right{
+
+.fa-angle-double-right {
     position: absolute;
     right: 2%;
     top: 50%;
 }
-.fa-angle-double-left{
+
+.fa-angle-double-left {
     position: absolute;
     left: 2%;
     top: 50%;
 }
 
-.building1{
+.building1 {
     background-color: #e0e7e9;
     padding: 15px;
     border-radius: 15px;
@@ -385,11 +396,12 @@ project section */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: all .3s;
     z-index: 12;
 }
-.building2{
+
+.building2 {
     background-color: #e0e7e9;
     padding: 15px;
     border-radius: 15px;
@@ -397,40 +409,46 @@ project section */
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: all .3s;
     opacity: 0;
     pointer-events: none;
     z-index: 11;
 }
-.building2-clicked{
+
+.building2-clicked {
     opacity: 1;
     top: 50%;
     pointer-events: all;
 }
-.building1-clicked{
+
+.building1-clicked {
     top: 70%;
     opacity: 0;
     pointer-events: none;
 }
-.building1-heading{
+
+.building1-heading {
     font-size: 50px;
     font-weight: 200;
     margin-bottom: 10px;
 }
-.project1{
+
+.project1 {
     bottom: 0%;
     position: absolute;
     right: 0;
     height: 100vh;
     transition: all .3s;
 }
-.project1-clicked{
+
+.project1-clicked {
     opacity: 0;
     right: -20%;
 
 }
-.project2{
+
+.project2 {
     position: absolute;
     height: 100vh;
     opacity: 0;
@@ -438,16 +456,13 @@ project section */
     bottom: 0;
     transition: all .3s;
 }
-.project2-clicked{
+
+.project2-clicked {
     right: 0;
     opacity: 1;
 }
+
 /* contact section */
-.contact{
-    height: 100vh;
-}
-
-
 
 
 
@@ -530,7 +545,8 @@ project section */
         font-size: 70px;
 
     }
-    .projects h1{
+
+    .projects h1 {
         font-size: 60px;
         z-index: 100;
     }
@@ -540,9 +556,10 @@ project section */
 
 
 /* mobile version */
-*{
+* {
     overflow-x: hidden;
 }
+
 @media (max-width:480px) {
     .menu {
         width: 100%;
@@ -567,8 +584,8 @@ project section */
     }
 
     .right {
-        width: 100%;
-        height: 90vh;
+        width: 100vw;
+        height: 85vh;
     }
 
     .btn {
@@ -590,19 +607,24 @@ project section */
         height: 300px;
         margin-left: 10px;
     }
+
     .about-heading {
         font-size: 50px;
     }
-    .building1{
+
+    .building1 {
         background-color: #e0e7e9be;
     }
-    .building2{
+
+    .building2 {
         background-color: #e0e7e9be;
     }
-    .building1-heading{
+
+    .building1-heading {
         font-size: 30px;
     }
-    .building1-para{
+
+    .building1-para {
         font-size: 10px;
     }
 }
